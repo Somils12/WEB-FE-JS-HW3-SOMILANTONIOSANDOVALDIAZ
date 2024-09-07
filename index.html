@@ -84,14 +84,17 @@
                             Promises have significantly improved asynchronous programming in JavaScript because they allow the outcome of an asynchronous operation to be handled in a more predictable and structured way. Furthermore, by using promises, it is possible to chain multiple asynchronous operations together without falling into the excessive nesting that characterizes callback hell. This chaining is done with the .then() methods to handle the successful resolution of a promise, and .catch() to handle errors (Flanagan, 2020).
                             <br><br>
                             A common example is the use of promises with the fetch() method, which is used to make HTTP requests. The promise returned by fetch() can be handled with then() to process the server's response and with catch() to handle any errors that occur during the request:
-                            <pre>
-                                <code>
-                                    fetch('https://api.example.com/data')
-                                    .then(response => response.json())
-                                    .then(data => console.log(data))
-                                    .catch(error => console.error('Error:', error));
-                                </code>
-                            </pre>
+                            <div class="code-block">
+                                <pre>
+                                    <code>
+                                        <span class="function-name">fetch</span>(<span class="string">'https://api.example.com/data'</span>)
+                                        .<span class="function-name">then</span>(<span class="variable">response</span> => <span class="variable">response</span>.<span class="function-name">json</span>())
+                                        .<span class="function-name">then</span>(<span class="variable">data</span> => console.log(<span class="variable">data</span>))
+                                        .<span class="function-name">catch</span>(<span class="variable">error</span> => console.error(<span class="string">'Error:'</span>, <span class="variable">error</span>));
+                                    </code>
+                                </pre>
+                            </div>
+                            
                             Este ejemplo muestra cómo las promesas facilitan el manejo de errores y la concatenación de operaciones asíncronas (Davidson, 2019).
                             <br><br>
                             </p>
@@ -105,19 +108,22 @@
                             The main benefit of async/await is that it allows you to write asynchronous code that looks like synchronous code. This makes it easier to read, debug, and maintain compared to using .then() and .catch() on promises. Additionally, it eliminates the need to chain promise calls together, as using await temporarily pauses the execution of the function until the promise is resolved, improving code clarity.
                             <br>
                             For example:
-                            <pre>
-                                <code>
-                                    async function fetchData() {
-                                        try {
-                                            let response = await fetch('https://api.example.com/data');
-                                            let data = await response.json();
-                                            console.log(data);
-                                        } catch (error) {
-                                            console.error('Error:', error);
+                            <div class="code-block">
+                                <pre>
+                                    <code>
+                                        <span class="keyword">async</span> <span class="function-name">function</span> fetchData() {
+                                            <span class="keyword">try</span> {
+                                                <span class="variable">let</span> response = <span class="keyword">await</span> fetch(<span class="string">'https://api.example.com/data'</span>);
+                                                <span class="variable">let</span> data = <span class="keyword">await</span> response.json();
+                                                console.log(data);
+                                            } <span class="keyword">catch</span> (error) {
+                                                console.error(<span class="string">'Error:'</span>, error);
+                                            }
                                         }
-                                        }                                      
-                                </code>
-                            </pre>
+                                    </code>
+                                </pre>
+                            </div>
+                            
                         </p>
                     </li>
                     <li class="separar-inPC">
@@ -134,28 +140,44 @@
                     </li>
                 </ol>
                 <h2 class="separar-inPC">References</h2>
-                <ul>
+                <ul class="references-list">
                     <li>
-                        Davidson, T. (2019). JavaScript Async and Promises: Asynchronous Code Like a Boss. Smashing Magazine. https://www.smashingmagazine.com/2019/10/javascript-async-promises/
+                        Davidson, T. (2019). JavaScript Async and Promises: Asynchronous Code Like a Boss. Smashing Magazine. 
+                        <a href="https://www.smashingmagazine.com/2019/10/javascript-async-promises/">https://www.smashingmagazine.com/2019/10/javascript-async-promises/</a>
                     </li>
                     <li>
                         Flanagan, D. (2020). JavaScript: The Definitive Guide (7th ed.). O'Reilly Media.
                     </li>
-                    
                     <li>
-                        MDN Web Docs. (2023). Asynchronous JavaScript. https://developer.mozilla.org/es/docs/Learn/JavaScript/Asynchronous/Conceptos_basicos
+                        MDN Web Docs. (2023). Asynchronous JavaScript. 
+                        <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Asynchronous/Conceptos_basicos">https://developer.mozilla.org/es/docs/Learn/JavaScript/Asynchronous/Conceptos_basicos</a>
                     </li>
-                        
                     <li>
-                        Node.js Docs. (2023). The Node.js Event Loop, Timers, and process.nextTick(). https://nodejs.org/es/docs/guides/event-loop-timers-and-nexttick/
+                        Node.js Docs. (2023). The Node.js Event Loop, Timers, and process.nextTick(). 
+                        <a href="https://nodejs.org/es/docs/guides/event-loop-timers-and-nexttick/">https://nodejs.org/es/docs/guides/event-loop-timers-and-nexttick/</a>
                     </li>
-                </ul> 
+                </ul>
             </div>
         </div>
     </main>
 
     <footer class="footer">
-        <h1>AQUI VA EL FOOTER</h1>
+        <div class="footer-section">
+            <p>&copy; 2024 Somil Sandoval Diaz. All rights reserved.</p>
+        </div>
+        
+        <div class="footer-section">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Contact Us</a>
+        </div>
+    
+        <div class="footer-icons">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </div>
     </footer>
 </body>
 </html>
