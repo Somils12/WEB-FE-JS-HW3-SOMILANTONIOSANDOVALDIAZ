@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts.css">
 </head>
 <body class="all">
     <header class="flex flexCols ">
         <div class="flex flexRows headerStyles">
-            <h2 class="nombreBlog">BOLOG</h2>
-            <div class="">
+            <div class="imagenIcono"></div>
+            <h2 class="nombreBlog separadorHeaderSuperior">BOLOG</h2>
+            <div class="separadorHeaderSuperior">
                 <ul class="flex flexRows quitarPuntoLi ">
                     <li class="separarElemheader">Articles</li>
                     <li class="separarElemheader">Books</li>
@@ -51,12 +53,11 @@
         </div>
         <div class="flex flexCols">
             <div class="imagen">
-                <h1>AQUI VA LA IMAGEN</h1>
             </div>
             <div class="contenidoPrincipal">
                 <h1>Key Concepts in JavaScript Asynchronous Programming: Callbacks, Promises, and the Event Loop</h1>
-                <ol>
-                    <li>
+                <ol class="separar-inPC">
+                    <li >
                         <h3>Asynchronous JavaScript</h3>
                         <p>
                         JavaScript is a programming language that operates in a mostly single-threaded manner, meaning it can only run one thing at a time on its main thread. However, it is often required to perform multiple tasks simultaneously, such as loading data from a server, waiting for user input, or handling timers. This is where asynchronous programming comes in. Asynchrony in JavaScript allows long-running tasks, such as HTTP requests, to not block the main flow of the program. This is crucial for user experience, especially in web applications, where waiting for a response from an operation can make the page feel slow or unresponsive (MDN Web Docs, 2023).
@@ -65,7 +66,7 @@
                     </p>
                     </li>
 
-                    <li>
+                    <li class="separar-inPC">
                         <h3>Callback</h3>
                         <p>
                             A callback is a function that is passed as an argument to another function and is executed when an operation has completed. In JavaScript asynchronous programming, callbacks are one of the most basic and traditional ways to handle asynchrony. For example, if you make an HTTP request to get data from a server, you can pass a callback function that will be executed when that data is received.
@@ -76,7 +77,7 @@
                         </p>
                     </li>
 
-                    <li>
+                    <li class="separar-inPC">
                         <h3>Promise</h3>
                         <p>A promise is an object in JavaScript that represents the eventual success or failure of an asynchronous operation. The promise can be in one of three states: pending, fulfilled, or rejected. When a promise is invoked, the asynchronous operation is initiated and the promise is initially in the pending state. Once the operation has completed, the promise is either resolved or rejected, and the corresponding method (then or catch) is invoked.
                             <br><br>
@@ -96,7 +97,7 @@
                             </p>
                     </li>
 
-                    <li>
+                    <li class="separar-inPC">
                         <h3>Async/Await</h3>
                         <p>
                             async/await is a syntax introduced in ECMAScript 2017 that provides a simpler and more readable way of working with promises. A function marked with async always returns a promise, and await is used inside async functions to pause execution until a promise is resolved or rejected.
@@ -119,7 +120,7 @@
                             </pre>
                         </p>
                     </li>
-                    <li>
+                    <li class="separar-inPC">
                         <h3>Event Loop</h3>
                         <p>
                             The event loop is one of the fundamental concepts in asynchronous JavaScript execution. JavaScript uses an event-based concurrency model and an event loop that allows for non-blocking programming. Although JavaScript only has a single thread for code execution, the event loop allows code to not block execution while waiting for asynchronous tasks to complete.
@@ -132,12 +133,23 @@
                         </p>
                     </li>
                 </ol>
-                <h2>References</h2>
-                <p>Referencias
-                    Davidson, T. (2019). JavaScript Async and Promises: Asynchronous Code Like a Boss. Smashing Magazine. https://www.smashingmagazine.com/2019/10/javascript-async-promises/
-                    Flanagan, D. (2020). JavaScript: The Definitive Guide (7th ed.). O'Reilly Media.
-                    MDN Web Docs. (2023). Asynchronous JavaScript. https://developer.mozilla.org/es/docs/Learn/JavaScript/Asynchronous/Conceptos_basicos
-                    Node.js Docs. (2023). The Node.js Event Loop, Timers, and process.nextTick(). https://nodejs.org/es/docs/guides/event-loop-timers-and-nexttick/</p>
+                <h2 class="separar-inPC">References</h2>
+                <ul>
+                    <li>
+                        Davidson, T. (2019). JavaScript Async and Promises: Asynchronous Code Like a Boss. Smashing Magazine. https://www.smashingmagazine.com/2019/10/javascript-async-promises/
+                    </li>
+                    <li>
+                        Flanagan, D. (2020). JavaScript: The Definitive Guide (7th ed.). O'Reilly Media.
+                    </li>
+                    
+                    <li>
+                        MDN Web Docs. (2023). Asynchronous JavaScript. https://developer.mozilla.org/es/docs/Learn/JavaScript/Asynchronous/Conceptos_basicos
+                    </li>
+                        
+                    <li>
+                        Node.js Docs. (2023). The Node.js Event Loop, Timers, and process.nextTick(). https://nodejs.org/es/docs/guides/event-loop-timers-and-nexttick/
+                    </li>
+                </ul> 
             </div>
         </div>
     </main>
