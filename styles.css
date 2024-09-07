@@ -4,6 +4,7 @@
     font-family: "NunitoRegular";
 }
 
+
 .flex {
     display: flex;
 }
@@ -60,7 +61,7 @@
 }
 
 .separarElemheader {
-    margin-left: 2.5em;
+    margin-right: 2.2em;
 }
 
 .imagen {
