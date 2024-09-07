@@ -6,42 +6,54 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <div>
-            <h2>Bolog</h2>
-            <div>
-                <ul>
-                    <li>Articles</li>
-                    <li>Books</li>
-                    <li>Workshops</li>
-                    <li>Conferences</li>
+<body class="all">
+    <header class="flex flexCols ">
+        <div class="flex flexRows headerStyles">
+            <h2 class="nombreBlog">BOLOG</h2>
+            <div class="">
+                <ul class="flex flexRows quitarPuntoLi ">
+                    <li class="separarElemheader">Articles</li>
+                    <li class="separarElemheader">Books</li>
+                    <li class="separarElemheader">Workshops</li>
+                    <li class="separarElemheader">Conferences</li>
                 </ul>
             </div>
         </div>
-        <div>
-            <ul>
-                <li>UX</li>
-                <li>CSSS</li>
-                <li>JavaScript</li>
-                <li>Performance</li>
-                <li>Design</li>
-                <li>Figma</li>
-                <li>Wallspaper</li>
-                <li>React</li>
-                <li>Vue</li>
-                <li>Web Design</li>
-                <li>Guildes</li>
-                <li>Bussness</li>
+        <div class="subheader">
+            <ul class="flex flexRows quitarPuntoLi alinearCentro">
+                <li class="separarElemSubheader">UX</li>
+                <li class="separarElemSubheader">CSS</li>
+                <li class="separarElemSubheader">JavaScript</li>
+                <li class="separarElemSubheader">Performance</li>
+                <li class="separarElemSubheader">Design</li>
+                <li class="separarElemSubheader">Figma</li>
+                <li class="separarElemSubheader">Wallspaper</li>
+                <li class="separarElemSubheader">React</li>
+                <li class="separarElemSubheader">Vue</li>
+                <li class="separarElemSubheader">Web Design</li>
+                <li class="separarElemSubheader">Guildes</li>
+                <li class="separarElemSubheader">Bussness</li>
             </ul>
         </div>
     </header>
 
-    <main>
-        <div></div>
-        <div>
-            <div></div>
-            <div>
+    <main class="flex flexRows">
+        <div class="tableContent">
+            <h3>Table of Contents</h3>
+            <ol>
+                <li>Asynchronous JavaScript</li>
+                <li>Callback</li>
+                <li>Promise</li>
+                <li>Async/Await</li>
+                <li>Event Loop</li>
+                <li>References</li>
+            </ol>
+        </div>
+        <div class="flex flexCols">
+            <div class="imagen">
+                <h1>AQUI VA LA IMAGEN</h1>
+            </div>
+            <div class="contenidoPrincipal">
                 <h1>Key Concepts in JavaScript Asynchronous Programming: Callbacks, Promises, and the Event Loop</h1>
                 <ol>
                     <li>
@@ -130,8 +142,8 @@
         </div>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <h1>AQUI VA EL FOOTER</h1>
     </footer>
 </body>
 </html>
